@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap-custom.css">
+        
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <div class="navbar-brand" href="#">ScoreBoard</div>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="navbar-collapse collapse" id="navbarColor01" style="">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link1</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link2</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link3</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+        
+        
+        <div class="container-fluid main">
+            <player name="player1" point="0"></player>
+            
+            <div class="col-xs-12 panel panel-default text-center"><h1 class="panel-body">VS</h1></div>
+            <player name="player2" point="0"></player>
+            
+            <timer time="0" label="START" mode="0"></timer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/riot/2.3.18/riot+compiler.js'></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script src="./js/player.tag" type="riot/tag"></script>
+        <script src="./js/timer.tag" type="riot/tag"></script>
+
+        <script>
+            // マウント
+            riot.mount('*');
+        </script>
+
+    </body>
+</html>

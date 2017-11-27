@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="default-src">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-custom.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/main.css">
+        <title>Score Board</title>
+    </head>
+    <body>
+        <div id="deviceready" class="">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <div class="navbar-brand" href="#">ScoreBoard</div>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse collapse" id="navbarColor01" style="">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link1</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link2</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link3</a>
+                    </li>
+                  </ul>
+                </div>
+            </nav>
+            <div class="container-fluid main">
+                <player name="player1" point="0"></player>
+
+                <div class="col-xs-12 panel panel-default text-center"><h1 class="panel-body">VS</h1></div>
+                <player name="player2" point="0"></player>
+
+                <timer time="0" label="START" mode="0"></timer>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src='js/riot.min.js'></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+        <script src="js/player.tag" type="riot/tag"></script>
+        <script src="js/timer.tag" type="riot/tag"></script>
+
+        <script>
+            // マウント
+            riot.mount('*');
+        </script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
